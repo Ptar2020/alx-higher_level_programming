@@ -1,2 +1,5 @@
-# alx-higher_level_programming
-ALX SE Python Programming git repository
+###WELCOME TO PYTHON PROGRAMMING
+*Hello*
+> This repository carries all ALX SE projects on Python
+
+Enjoy
