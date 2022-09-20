@@ -30,4 +30,5 @@ def dec_to_hex(n):
        return dec_to_hex(n // 16) + str(ch)
    else:
        return str(ch)
-print([dec_to_hex(x) for x in range(0, 99)])
+for dec in range(0, 99):
+    print("{}".format(dec_to_hex(dec)))
