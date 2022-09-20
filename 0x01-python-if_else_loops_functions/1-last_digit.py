@@ -5,7 +5,7 @@ if number > 0:
     last = number % 10
 else:
     last = int(repr(number)[-1]) * -1
-print("Last digit of {0} is {1}".format(number, last), end = " ")
+print("Last digit of {0} is {1}".format(number, last), end=" ")
 if last > 5:
     print(f"and is greater than 5")
 elif last == 0:
