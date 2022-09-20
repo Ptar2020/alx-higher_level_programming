@@ -11,7 +11,4 @@ You are not allowed to store numbers or strings in a variable
 You are not allowed to import any module
 """
 for number in range(100):
-    if number != 99:
-        print("{:0>2},".format(number), end=" ")
-    else:
-        print("{:0>2}".format(number), end='\n')
+    print("{:0>2},".format(number), end=", " if number != 99 else '\n')
