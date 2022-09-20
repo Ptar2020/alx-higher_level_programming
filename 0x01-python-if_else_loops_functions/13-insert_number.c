@@ -3,7 +3,7 @@
 #include <string.h>
 #include "lists.h"
 /**
- * *insert_node - Adds node at end of list
+ * insert_node - Adds node at end of list
  * @head: The head of the list
  * @number: The number to be added
  * 
@@ -24,7 +24,6 @@ listint_t *insert_node(listint_t **head, int number)
 		temp->next = *head;
 
 		*head = temp;
-
 		return (temp);
 	}
 }
