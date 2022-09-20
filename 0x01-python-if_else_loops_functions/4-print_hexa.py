@@ -10,7 +10,6 @@ You are not allowed to import any module
 """
 
 def dec_to_hex(n):
-    
     x = (n % 16)
     ch = ""
     if (x < 10):
