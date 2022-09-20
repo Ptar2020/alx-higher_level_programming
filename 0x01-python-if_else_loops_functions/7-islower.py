@@ -10,3 +10,9 @@ You are not allowed to use str.upper() and str.isupper()
 Tips: ord()
 You don’t need to understand __import__
 """
+
+#!/usr/bin/python3
+def islower(c):
+    if ord(c) > 96 and ord(c) < 123:
+        return True
+    return False
