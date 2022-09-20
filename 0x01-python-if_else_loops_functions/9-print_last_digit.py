@@ -12,3 +12,4 @@ You don’t need to understand __import__
 def print_last_digit(number):
     last = int(repr(number)[-1])
     print("{}".format(last), end="")
+    return last
