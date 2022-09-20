@@ -10,6 +10,7 @@ You are not allowed to import any module
 """
 
 def dec_to_hex(n):
+    
     x = (n % 16)
     ch = ""
     if (x < 10):
@@ -31,4 +32,6 @@ def dec_to_hex(n):
     else:
         return str(ch)
 for dec in range(0, 99):
+
+
     print("{}".format(dec_to_hex(dec)))
