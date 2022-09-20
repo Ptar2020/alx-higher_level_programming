@@ -21,7 +21,7 @@ listint_t *insert_node(listint_t **head, int number)
 			return (NULL);
 
 		temp->number = strdup(number);
-		temp->len = strlen(number);
+		temp->number = strlen(number);
 		temp->next = *head;
 
 		*head = temp;
