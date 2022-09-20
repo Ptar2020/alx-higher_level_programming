@@ -13,4 +13,4 @@ You are not allowed to import any module
 for letter in range(ord('a'), ord('z') + 1):
     letter = chr(letter)
     if letter not in "qe":
-        print(letter, end="")
+        print("{}" .format(letter), end="")
