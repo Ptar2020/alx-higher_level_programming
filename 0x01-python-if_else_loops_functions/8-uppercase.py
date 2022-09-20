@@ -10,3 +10,11 @@ You are not allowed to use str.upper() and str.isupper()
 Tips: ord()
 You don’t need to understand __import__
 """
+
+
+def uppercase(str):
+    tmp = list(str)
+    for i in range(len(tmp)):
+        if (ord(tmp[i]) > 96 and ord(tmp[i]) < 123):
+            tmp[i] = chr(ord(tmp[i]) - 32)
+    print("{}".format(("").join(tmp)))
