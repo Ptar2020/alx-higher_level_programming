@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import sys
 items = sys.argv[1:]
 if len(items) > 1:
