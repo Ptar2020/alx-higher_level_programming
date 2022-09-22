@@ -5,7 +5,6 @@ from sys import argv
 
 def calculator():
     args = len(argv[1:])
-    print(args)
     if args != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
