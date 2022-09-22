@@ -10,7 +10,7 @@ if len(items) > 1:
         count += 1
         print(f"{count}: {item}")
 elif len(items) == 1:
-    print(f"1 argument:\n1: {argv[1]}" )
+    print(f"1 argument:\n1: {argv[1]}")
 else:
     print(f"{len(items)} arguments.")
 
