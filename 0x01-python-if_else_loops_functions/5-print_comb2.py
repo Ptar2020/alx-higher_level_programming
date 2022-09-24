@@ -10,5 +10,6 @@ You can only use one loop in your code
 You are not allowed to store numbers or strings in a variable
 You are not allowed to import any module
 """
-for number in range(100):
-    print("{:0>2},".format(number), end=", " if number != 99 else '\n')
+for number in range(00, 100):
+    print("{:02d},".format(number), end=", " if number != 99 else '\n')
+    
