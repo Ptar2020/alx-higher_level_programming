@@ -7,6 +7,8 @@ def print_reversed_list_integer(my_list=[]):
     Args:
         my_list (list):  [].
     """
+    if not my_list:
+        return
     reversed_list = reversed(my_list)
     for item in reversed_list:
         print("{}".format(item))

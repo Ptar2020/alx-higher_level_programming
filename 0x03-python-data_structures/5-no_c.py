@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-
 def no_c(my_string):
-    for char in my_string:
-        if char not in 'Cc':
-            print(char, end="")
+    return my_string.translate({ord(c): None for c in "cC"})
 
 
 if __name__ == "__main__":

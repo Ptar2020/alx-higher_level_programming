@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
-
 def max_integer(my_list=[]):
-    if len(my_list) == 0:
+    if not my_list or len(my_list) == 0:
         return None
     else:
-        for item in my_list:
-            print(item)
+        return sorted(my_list)[-1]
 
 
 if __name__ == "__main__":

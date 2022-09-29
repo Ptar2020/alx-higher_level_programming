@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-
-
 def print_matrix_integer(matrix=[[]]):
-    pass
+    for line in matrix:
+        for col in range(len(line)):
+            print(
+                "{:d}".format(line[col]),
+                end="" if col == len(line) - 1 else " ")
+        print("")
 
 
 if __name__ == "__main__":
