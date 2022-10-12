@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 import math
+"""
+Class definition
+"""
 
 
 class MagicClass:
-    """ class that creates a circle area"""
+    """ A class that creates a circle area"""
 
     def __init__(self, radius=0):
         """ Initialization first """
