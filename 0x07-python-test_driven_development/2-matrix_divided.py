@@ -20,4 +20,7 @@ def matrix_divided(matrix, div):
         matrix (list): The matrix list of lists to be divided
         div (int): This is the divider
     """
-    pass
+    if isinstance(matrix, list):
+        for item in matrix:
+            if isinstance(item, (int, float)):
+                raise TypeError()
