@@ -49,3 +49,26 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__length = value
+
+    def area(self):
+        """Return area of a rectangle given length and width"""
+        return (self.length * self.length)
+    
+    def perimeter(self):
+        """Returns perimeter given length and width"""
+        if self.length == 0 or self.width == 0:
+            return 0
+        return ((self.length + self.width) * 2)
+    
+    def __str__(self):
+        """
+        Returns string of Rectangle using #
+        if 0 returns empty string
+        """
+        if self.width == 0 or self.height == 0:
+            return ("")
+        width = "#" * self.width
+        rectangle = width
+        for x in range(self.height - 1):
+            rectangle += "\n" + width
+        return (rectangle)
