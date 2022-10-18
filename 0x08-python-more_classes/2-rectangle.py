@@ -51,6 +51,5 @@ class Rectangle:
         self.__length = value
 
     def area(self, value):
-        """This function calculates the area of a rectangle given length and width"""
+        """Calculates the area of a rectangle given length and width"""
         return self.width * self.length
-    

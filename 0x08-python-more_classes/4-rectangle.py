@@ -81,4 +81,3 @@ class Rectangle:
 
     def __delete__(self):
         """Deletes the instance of Rectangle class"""
-        
