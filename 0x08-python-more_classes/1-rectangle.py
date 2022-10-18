@@ -6,13 +6,15 @@ This module defines a class - Rectangle
 
 class Rectangle:
     """
-    This class has two attributes, width and height
+    This class has two attributes
+    width
+    height
     both will have property and setter function definition
     """
 
     def __init__(self, width=0, height=0):
         """
-        This instantiates width and height
+        instantiates width and height
         """
         self.width = width
         self.height = height
@@ -20,15 +22,17 @@ class Rectangle:
     @property
     def width(self):
         """
-        Function to return width if setter checks have passed
+        function to return width if setter checks have passed
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        The setter validates if value is >= 0
-        Raises: TypeError and ValueError
+        setter validates if value is >= 0
+        Raises:
+        TypeError
+        ValueError
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -37,15 +41,22 @@ class Rectangle:
         self.__width = value
 
     @property
-    def length(self):
-        """This function returns the length if the setter check are passed
+    def height(self):
         """
-        return self.__length
+        function to return height if setter checks have passed
+        """
+        return self.__height
 
-    @length.setter
-    def length(self, value):
+    @height.setter
+    def height(self, value):
+        """
+        setter validates if value is >= 0
+        Raises:
+        TypeError
+        ValueError
+        """
         if not isinstance(value, int):
-            raise TypeError("length must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
-        self.__length = value
+            raise ValueError("height must be >= 0")
+        self.__height = value
