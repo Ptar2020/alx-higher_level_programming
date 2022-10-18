@@ -50,6 +50,13 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__length = value
 
-    def area(self, value):
-        """Calculates the area of a rectangle given length and width"""
-        return (self.width * self.length)
+    def area(self):
+        """Return area of a rectangle given length and width"""
+        return (self.length * self.length)
+
+    def perimeter(self):
+        """Returns perimeter given length and width"""
+        if self.length == 0 or self.width == 0:
+            return 0
+        return ((self.length + self.width) * 2)
+
