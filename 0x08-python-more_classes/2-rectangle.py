@@ -52,4 +52,4 @@ class Rectangle:
 
     def area(self, value):
         """Calculates the area of a rectangle given length and width"""
-        return self.width * self.length
+        return (self.width * self.length)
