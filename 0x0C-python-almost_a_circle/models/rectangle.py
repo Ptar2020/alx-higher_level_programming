@@ -2,6 +2,7 @@
 """A rectangle class that inherits from a Base class"""
 from models import base
 
+
 class Rectangle(base.Base):
     """The rectangle class that inherits from the Base class"""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -11,12 +12,12 @@ class Rectangle(base.Base):
         self.x = x
         self.y = y
         super().__init__(id)
-        
+
     @property
     def width(self):
         """Gets the width value"""
         return (self.__width)
-    
+
     @width.setter
     def width(self, value):
         """Validates the width value"""
@@ -25,12 +26,12 @@ class Rectangle(base.Base):
         if type(value) is not int:
             raise TypeError("width must be an integer")
         self.__width = value
-        
+
     @property
     def height(self):
         """Gets the height value"""
         return (self.__height)
-    
+
     @height.setter
     def height(self, value):
         if type(value) is not int:
@@ -43,7 +44,7 @@ class Rectangle(base.Base):
     def x(self):
         """Gets the x value"""
         return (self.__x)
-    
+
     @x.setter
     def x(self, value):
         """Sets the x value"""
@@ -57,7 +58,7 @@ class Rectangle(base.Base):
     def y(self):
         """Gets the value of y"""
         return (self.__y)
-    
+
     @y.setter
     def y(self, value):
         """Validates the value of y"""
