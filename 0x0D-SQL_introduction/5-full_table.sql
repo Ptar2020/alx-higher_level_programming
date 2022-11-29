@@ -1,3 +1,3 @@
--- This script list all data in a table
+-- This script prints the full description of table in a database
 
-SELECT * FROM first_tables;
+SHOW CREATE TABLE first_table;
