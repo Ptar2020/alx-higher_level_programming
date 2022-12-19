@@ -1,4 +1,4 @@
-#!/usr/bin/env Node
+#!/usr/bin/env node
 argv = process.argv
 if (argv.length === 3) {
     console.log("Argument found")
