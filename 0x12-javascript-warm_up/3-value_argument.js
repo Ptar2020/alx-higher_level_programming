@@ -1,4 +1,4 @@
-#!/usr/bin/env Node
+#!/usr/bin/node
 argv = process.argv;
 
 if (argv[2]) {
