@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 // Computes and prints a factorial
 
 function factorial(n) {
