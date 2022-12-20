@@ -1,8 +1,9 @@
-#!/usr/bin/node
-// converts a number from base 10 to another base passed as argument.
+#!/usr/bin / node
+// script that imports an array and computes a new array.
 
-exports.converter = function (base) {
-  return function (n) {
-    return (n.toString(base));
-  };
-};
+const originalList = require('./100-data').list;
+console.log(originalList);
+const mappedList = originalList.map(function (e, index) {
+  return (e * index);
+});
+console.log(mappedList);

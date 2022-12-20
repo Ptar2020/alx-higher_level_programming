@@ -1,8 +1,9 @@
-#!/usr/bin/node
-// converts a number from base 10 to another base passed as argument.
+#!/usr/bin / node
+// function that returns the number of occurrences in a list
 
-exports.converter = function (base) {
-  return function (n) {
-    return (n.toString(base));
-  };
-};
+const originalList = require('./100-data').list;
+console.log(originalList);
+const mappedList = originalList.map(function (e, index) {
+  return (e * index);
+});
+console.log(mappedList);
