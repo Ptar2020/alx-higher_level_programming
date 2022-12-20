@@ -9,4 +9,3 @@ while (i < 3) {
   console.log(langs[i]);
   i = i + 1;
 }
-
