@@ -1,5 +1,5 @@
 #!/usr/bin/node
-argv = process.argv
+const rgv = process.argv
 if (argv.length === 3) {
   console.log("Argument found");
 }
