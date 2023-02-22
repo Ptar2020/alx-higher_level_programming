@@ -7,7 +7,7 @@ script takes githut creds and uses to display id
 
 
 if __name__ == "__main__":
-    uid = requests.get('https://api.github.com/user',
+    uid = requests.get('https://api.github.com/Ptar2020',
                        auth=(argv[1], argv[2])).json()
     if "id" in uid:
         print(uid['id'])

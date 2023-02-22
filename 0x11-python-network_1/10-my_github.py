@@ -9,7 +9,7 @@ def searchapi():
     """status"""
     user = str(sys.argv[1])
     pw = str(sys.argv[2])
-    result = requests.get("https://api.github.com/user",
+    result = requests.get("https://api.github.com/Ptar2020",
                           auth=(HTTPBasicAuth(user, pw)))
 
     try:
