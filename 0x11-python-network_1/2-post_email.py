@@ -1,22 +1,19 @@
 #!/usr/bin/python3
+"""Send POST"""
 import urllib.request
 import urllib.parse
-from sys import argv
-"""
-script that takes in a url and an email, sends a POST request
-to the url with the email as parameter and displays body of the
-response
-"""
+import sys
 
+
+def sender():
+    """sender"""
+    v = {"email": sys.argv[2]}
+    data = urllib.parse.urlencode(v)
+    data = data.encode("ascii")
+    req = urllib.request.Request(sys.argv[1], data)
+    with urllib.request.urlopen(req) as response:
+        html = response.read()
+        print(html.decode("utf-8"))
 
 if __name__ == "__main__":
-    """
-    """
-    info = {'email': argv[2]}
-    data = urllib.parse.urlencode(info)
-    data = data.encode('ascii')
-    url = argv[1]
-    reply = urllib.request.Request(url, data)
-    with urllib.request.urlopen(reply) as rep:
-        body = rep.read()
-    print(body.decode(encoding="utf-8"))
+    sender()
